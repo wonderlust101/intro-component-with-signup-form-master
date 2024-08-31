@@ -2,9 +2,11 @@
 $colors: (
   // Main Colors
         primary-color: (
-                'redish-orange': #ff7979,
-                'green': #38cc8b,
-                'purple': #5e54a4,
+                'red-400': #ff7979,
+                'green-300': #77e2b3,
+                'green-500': #38cc8b,
+                'green-600': #32b87d,
+                'purple-500': #5e54a4,
         ),
         neutral-color: (
                 'light-grey': #dedede,
@@ -12,6 +14,7 @@ $colors: (
         ),
   // Other
         'background': #ff7979,
+        'box-shadow': #3D3B484C,
         'white': #ffffff,
         'black': #3d3b48,
 );

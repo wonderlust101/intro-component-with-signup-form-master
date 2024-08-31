@@ -36,7 +36,8 @@
   text-align: center;
   border-radius: 0.5rem;
   color: var(--clr-white);
-  background: var(--clr-primary-color-purple);
+  background: var(--clr-primary-color-purple-500);
+  box-shadow: 0 7.5px 0 var(--clr-box-shadow);
 
   & > * {
     font-weight: 400;
@@ -47,8 +48,10 @@
   display: grid;
   gap: 0.5rem;
   padding: 1.5rem;
-  background-color: var(--clr-white);
   border-radius: 0.5rem;
+  background-color: var(--clr-white);
+  box-shadow: 0 7.5px 0 var(--clr-box-shadow);
+
 
   @include a.breakpoint(medium){
     padding: 2.5rem;
