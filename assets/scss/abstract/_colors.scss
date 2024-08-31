@@ -2,15 +2,16 @@
 $colors: (
   // Main Colors
         primary-color: (
-                'star-dust': #f9f3dd,
-                'crackled': #f2e7d1,
-                'neon-spring': #3ffd6a,
-                'iris-royale': #591b98,
-                'fading-horizon': #442266,
-                'election-night': #110320,
+                'redish-orange': #ff7979,
+                'green': #38cc8b,
+                'purple': #5e54a4,
+        ),
+        neutral-color: (
+                'light-grey': #dedede,
+                'grey': #bab7d4,
         ),
   // Other
-        'background': #fafafa,
+        'background': #ff7979,
         'white': #ffffff,
-        'black': #000000,
+        'black': #3d3b48,
 );

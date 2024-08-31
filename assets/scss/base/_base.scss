@@ -3,3 +3,14 @@
 :root {
   @include a.map-to-root(clr, a.$colors);
 }
+
+body {
+  display: grid;
+  justify-items: center;
+  margin: 0 auto;
+  background: url('../images/bg-intro-mobile.png') var(--clr-background);
+
+  @include a.breakpoint(medium) {
+    background: url('../images/bg-intro-desktop.png') var(--clr-background);
+  }
+}

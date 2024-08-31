@@ -1,0 +1,56 @@
+@use '../abstract' as a;
+
+.signup-page-layout {
+  @include a.set-grid-areas(header, form);
+  grid-template-rows: max-content max-content;
+
+
+  @include a.breakpoint(medium) {
+    width: min(90%, 110rem);
+    grid-template: 'header form' / 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.signup-header {
+  display: grid;
+  gap: 1.5rem;
+  width: 90%;
+  margin: 4rem 0;
+  text-align: center;
+  color: var(--clr-white);
+
+  @include a.breakpoint(medium) {
+    text-align: left;
+  }
+}
+
+.signup-layout{
+  display: grid;
+  gap: 1.5rem;
+  width: 90%;
+}
+
+.trial-rate-layout {
+  padding: 1rem 4rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: var(--clr-white);
+  background: var(--clr-primary-color-purple);
+
+  & > * {
+    font-weight: 400;
+  }
+}
+
+.form-layout {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background-color: var(--clr-white);
+  border-radius: 0.5rem;
+
+  @include a.breakpoint(medium){
+    padding: 2.5rem;
+  }
+}

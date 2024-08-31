@@ -7,40 +7,65 @@
     <!--     <meta name="title" content="title"> -->
     <!--     <meta name="description" content="description"> -->
 
-    <title>Document</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
     <link rel="stylesheet" href="assets/css/main.css"/>
-
-    <!--Remove later-->
-    <style>
-        @font-face {
-            font-family: 'VT323';
-            src: url('assets/fonts/DotGothic16-Regular.ttf');
-        }
-
-        * {
-            font-family: 'VT323', sans-serif;
-            font-size: 120px;
-        }
-    </style>
-    <!--Remove later-->
 </head>
-<body>
-    <div style="display: grid; height: 100vh;">
-        <div style="width: 100%; background-color:var(--clr-primary-color-star-dust); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-election-night)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-crackled); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-fading-horizon)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-neon-spring); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-iris-royale)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-iris-royale); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-neon-spring)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-fading-horizon); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-crackled)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-election-night);display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-star-dust)">Neon Genesis Evangelion</h1></div>
-    </div>
+<body class="signup-page-layout">
+    <header class="signup-header">
+        <h1>Learn to code by watching others</h1>
+
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+            but understanding how developers think is invaluable.</p>
+    </header>
+    <main class="signup-layout">
+        <div class="trial-rate-layout">
+            <p><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+
+        <form class="form-layout" id="signup-form" action="" novalidate>
+            <fieldset class="form">
+                <legend class="sr-only">Signup</legend>
+                <div class="text-input">
+                    <label class="sr-only" for="first-name">First Name</label>
+                    <input class="text-input__field" id="first-name" type="text" placeholder="First Name" aria-required="true" required>
+                    <img class="text-input__error-icon" src="assets/images/icon-error.svg" alt="Error" aria-hidden="true">
+                    <p class="text-input__status">First Name cannot be empty</p>
+                </div>
+                <div class="text-input">
+                    <label class="sr-only" for="last-name">Last Name</label>
+                    <input class="text-input__field" id="last-name" type="text" placeholder="Last Name" aria-required="true" required>
+                    <img class="text-input__error-icon" src="assets/images/icon-error.svg" alt="Error" aria-hidden="true">
+                    <p class="text-input__status">Last Name cannot be empty</p>
+                </div>
+                <div class="text-input">
+                    <label class="sr-only" for="email">Email Address</label>
+                    <input class="text-input__field" id="email" type="email" placeholder="Email Address" spellcheck="false" autocomplete="email"
+                           aria-required="true"
+                           required>
+                    <img class="text-input__error-icon" src="assets/images/icon-error.svg" alt="Error" aria-hidden="true">
+                    <p class="text-input__status">Looks like this is not an email</p>
+                </div>
+                <div class="text-input">
+                    <label class="sr-only" for="password">Password</label>
+                    <input class="text-input__field" id="password" type="password" placeholder="Password" spellcheck="false" autocomplete="email"
+                           aria-required="true"
+                           required>
+                    <img class="text-input__error-icon" src="assets/images/icon-error.svg" alt="Error" aria-hidden="true">
+                    <p class="text-input__status">Looks like this is not an email</p>
+                </div>
+                <button class="button" type="submit">Claim your free trial</button>
+            </fieldset>
+            <p class="form__terms">By clicking the button, you are agreeing to our <a class="form__terms--link" href="#">Terms and Services</a></p>
+        </form>
+    </main>
+
 
     <script src="assets/scripts/index.js"></script>
 </body>

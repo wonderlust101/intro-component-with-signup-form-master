@@ -1,6 +1,31 @@
 @use '../abstract' as a;
 
-h1, h2, h3, h4,
-h5, h6, p {
+h1, h2, h3, h4, h5,
+h6, p, a, button, input {
+  font-family: 'Poppins', sans-serif;
+}
 
+h1 {
+  font-weight: 600;
+
+  @include a.breakpoint(medium) {
+    font-size: 3.25rem;
+  }
+}
+
+p {
+  line-height: 1.75;
+  font-weight: 500;
+
+  @include a.breakpoint(medium) {
+    font-size: 1.1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 600;
 }

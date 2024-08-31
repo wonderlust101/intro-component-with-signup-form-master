@@ -1,0 +1,22 @@
+@use '../abstract' as a;
+
+.form {
+  display: grid;
+  gap: 1rem;
+  border: none;
+
+  @include a.breakpoint(medium) {
+    gap: 1.25rem;
+  }
+
+  &__terms {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--clr-neutral-color-grey);
+
+    &--link {
+      font-weight: 700;
+      color: var(--clr-primary-color-redish-orange);
+    }
+  }
+}
